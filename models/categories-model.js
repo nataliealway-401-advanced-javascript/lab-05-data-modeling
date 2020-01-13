@@ -1,16 +1,14 @@
 
 'use strict';
 
-const DataModel = require('../memory-data-model.js');
+const schema = require('../schemas/categories-schema.js');
+const mongoModel = require('./mongo-model.js');
 
-class Categories extends DataModel {
+class Categories extends mongoModel {
   constructor() {
     super();
-    this.schema = {
-      id: { required: true },
-      name: { required: true },
-    };
-  }
+    this.schema = schema;
+  } 
 }
 
 module.exports = Categories;
