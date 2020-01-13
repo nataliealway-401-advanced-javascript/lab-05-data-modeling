@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const categories = new mongoose.Schema({
   name: { type: String, required: true },
-  amount: {type: Number, required: true},
+  count: {type: Number, required: true},
 });
 
 // Runs any time we run the .findOne() method

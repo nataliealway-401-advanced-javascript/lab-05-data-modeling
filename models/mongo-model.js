@@ -1,19 +1,10 @@
 'use strict';
 
-const schema = require('../schemas/categories-schema.js');
+let schema = require('../schemas/categories-schema');
 
 class Model {
   constructor() {
     this.schema = schema;
-  }
-  // CREATE
-  create(record) {
-    if (typeof record === 'object') {
-      let newRecord = new this.schema(record);
-      return newRecord.save();
-    } else {
-      return Error('Uh oh! Invalid record');
-    }
   }
 
   // Read / search
@@ -22,6 +13,15 @@ class Model {
       return this.schema.findOne({_id});
     } else {
       return this.schema.findOne({});
+    }
+  }
+
+  create(record) {
+    if (typeof record === 'object') {
+      let newRecord = new this.schema(record);
+      return newRecord.save();
+    } else {
+      return Error('Uh oh! Invalid record');
     }
   }
 
