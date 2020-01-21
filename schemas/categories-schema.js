@@ -9,6 +9,7 @@ const categories = new mongoose.Schema({
 
 /**
  * @function
+ * @returns console.log()
  */
 // Runs any time we run the .findOne() method
 categories.post('findOne', function () {
@@ -17,6 +18,7 @@ categories.post('findOne', function () {
 
 /**
  * @function
+ * @returns console.log()
  */
 // Runs any time we create a new record instance
 categories.post('find', function () {
@@ -25,6 +27,7 @@ categories.post('find', function () {
 
 /**
  * @function
+ * @returns console.log()
  */
 // Runs after we save (we can also run pre('save') as well ...)
 categories.post('save', function () {

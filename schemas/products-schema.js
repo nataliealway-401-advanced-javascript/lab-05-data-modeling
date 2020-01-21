@@ -9,6 +9,7 @@ const products = new mongoose.Schema({
 
 /**
  * @function
+ * @returns console.log()
  */
 // Runs any time we run the .findOne() method
 products.post('findOne', function () {
@@ -17,6 +18,7 @@ products.post('findOne', function () {
 
 /**
  * @function
+ * @returns console.log()
  */
 // Runs any time we create a new record instance
 products.post('find', function () {
@@ -25,6 +27,7 @@ products.post('find', function () {
 
 /**
  * @function
+ * @returns console.log()
  */
 // Runs after we save (we can also run pre('save') as well ...)
 products.post('save', function () {
