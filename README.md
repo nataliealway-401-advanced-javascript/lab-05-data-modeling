@@ -9,7 +9,7 @@
 * [travis](https://www.travis-ci.com/nataliealway-401-advanced-javascript/lab-05-NoSQL)
 
 #### Documentation
-* [jsdocs]()
+* [jsdocs](https://github.com/nataliealway-401-advanced-javascript/lab-05-NoSQL/tree/workingBranch/docs)
 
 
 ### Exported Values and Methods
